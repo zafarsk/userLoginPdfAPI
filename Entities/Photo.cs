@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API.Entities
 {
-    [Table("Photos")]
+    [Table("Photos")] 
     public class Photo
     {
         public int Id { get; set; }

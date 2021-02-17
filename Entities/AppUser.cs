@@ -23,10 +23,6 @@ namespace API.Entities
         public string Country { get; set; }
         public ICollection<Photo> Photos { get; set; }
         public bool IsPrivileged {get; set;}
-        // public int Age()
-        // {
-        //     return DateOfBirth.CalculateAge();
-        // }
-
+        
     }
 }

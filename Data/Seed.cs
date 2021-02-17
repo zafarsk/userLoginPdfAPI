@@ -27,7 +27,7 @@ namespace API.Data
                 {
                     user.IsPrivileged = true;
                     IsPrivileged = true;
-                }
+                } 
                 context.Users.Add(user);
             }
             await context.SaveChangesAsync();

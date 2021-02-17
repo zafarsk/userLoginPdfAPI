@@ -70,6 +70,7 @@ namespace API.Controllers
                 {
                     return Unauthorized("Invalid user.");
                 }
+                
             }
             return new UserDto
             {

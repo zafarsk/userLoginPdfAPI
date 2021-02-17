@@ -1,5 +1,5 @@
 namespace API.DTOs
-{
+{ 
     public class EstimationDto
     {
         public int Weight { get; set; }

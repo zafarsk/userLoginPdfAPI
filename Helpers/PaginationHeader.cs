@@ -1,6 +1,6 @@
 namespace API.Helpers
 {
-    public class PaginationHeader
+    public class PaginationHeader 
     {
         public PaginationHeader(int currentPage, int totalPages, int pageSize, int totalCount)
         {

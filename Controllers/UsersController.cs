@@ -147,13 +147,11 @@ namespace API.Controllers
         }
 
         [HttpPost("export")]
-        // public FileResult Export()
         public async Task<IActionResult> Export(EstimationDto estimationDto)
         {
             using (MemoryStream stream = new System.IO.MemoryStream())
             {
-                string fileName = HttpContext.User.GetUserName() + Path.GetRandomFileName() + ".png";
-                fileName = "estimation.cshtml";
+                string fileName = "estimation.cshtml";
                 string directory = _config["StoredFilesPath"];
                 string url = string.Format("{0}://{1}/{2}/{3}", HttpContext.Request.Scheme,
                                         HttpContext.Request.Host.Value, directory, fileName);

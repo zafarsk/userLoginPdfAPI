@@ -23,6 +23,7 @@ namespace API.Controllers
 
         public BuggyController(DataContext context, IConfiguration config, IGeneratePdf generatePdf)
         {
+            
             _generatePdf = generatePdf;
             _context = context;
             _config = config;

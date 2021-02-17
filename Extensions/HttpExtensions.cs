@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http;
 namespace API.Extensions
 {
     public static class HttpExtensions
-    {
+    { 
         public static void AddingPagingHeader(this HttpResponse response,int currentPage, 
             int totalPages, int pageSize, int totalCount)
         {

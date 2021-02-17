@@ -15,7 +15,7 @@ namespace API.Services
         {
             _config = config;
 
-        }
+        } 
         public async Task<Photo> AddPhotoAsync(HttpContext httpContext, IFormFile file)
         {
             string fileName = httpContext.User.GetUserName() + Path.GetRandomFileName() + ".png";
